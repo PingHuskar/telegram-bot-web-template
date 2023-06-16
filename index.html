@@ -4,16 +4,40 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Telegram Bot</title>
+  <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js" integrity="sha512-uMtXmF28A2Ab/JJO2t/vYhlaa/3ahUOgj1Zf27M5rOo8/+fcTUVH0/E0ll68njmjrLqOBjXM3V9NiPFL5ywWPQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 <body>
-  <!-- Your HTML file -->
+  <main>
+    <div class="centered">
+      <form id="form">
+        <h1>Telegram Bot</h1>
+        
+        <label for="file">
+          File
+          <input type="file" id="fileInput">
+        </label>
+        <label for="message">
+          Message
+          <input type="text" id="textInput">
+        </label>
+        <label for="message">
+          Send To
+          <select name="" id="toInput" onchange="updateImage(this.value)"></select>
+        </label>
+        <img src="" id="agentImg" alt="" height="100px">
+
+        <button type="submit" class="centered-submit">
+          Send!
+        </button>
+      </form>
+    </div>
+  </main>
 </body>
-<script src="https://ip9uk39kv26rml8wjjruzg-on.drv.tw/jsbot.js"></script>
-<!--  Or  -->
-<!-- <script src="app.js"></script> -->
-<script>
-  // Your logic here. All functions returns Promise
-  const bot = new Bot("110201543:AAHdqTcvCH1vGWJxfSeofSAs0K5PALDsaw", "123456789")
-</script>
+<script src="./jsbot.js"></script>
+<script src="./password.js"></script>
+<script src="./contact.js"></script>
+<script defer src="./myapp.js"></script>
 </html>
